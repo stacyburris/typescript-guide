@@ -5,14 +5,14 @@ Course Overview:
 
 ## Syntax + Features
 
-- What is an interface?
-- What is the syntax for defining an interface?
+- What is an inference?
+- What is the syntax for defining an inference?
 
 ### VS
 
 ## Design Patterns with TS
 
-- How do we use interfaces to write reusable code?
+- How do we use inference to write reusable code?
 
 ### Course Goals
 
