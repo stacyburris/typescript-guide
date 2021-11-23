@@ -1,8 +1,4 @@
 # Typescript: The Complete Developer's Guide
-
-
-Course Overview:
-
 ## Syntax + Features
 
 **Typing inference?**
@@ -31,7 +27,7 @@ Course Overview:
   summary(): string;
 }
 ```
-![interfaces](fetchjson/images/interfaces.png)
+![interfaces](images/interfaces.png)
 
 Questions:
 The goal of an interface is to: Define a new type
@@ -51,8 +47,8 @@ The goal of an interface is to: Define a new type
      ```
     charAt(), charCodeAt(), concat(), includes(), endsWith(), indexOf(), lastIndexOf(), localeCompare(), match().
      ```
-![Types](fetchjson/images/types.png)
-![Primitive & Object Types](fetchjson/images/primitive-object.png)
+![Types](images/types.png)
+![Primitive & Object Types](images/primitive-object.png)
 
 **Function typing + annotations**
 annotations -  `: number, : string, : boolean, : null, : undefined`
@@ -86,11 +82,18 @@ Tuple: (not used often)
 
   - **Classes:** Blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'
 
-![classes](fetchjson/images/classes.png) 
+![classes](images/classes.png) 
 
 *Design Patterns*
 - Projects
 
+Type Definition Files
+![Type Definition Files](images/Type-definition-files.png)
 ### Resources:
 
 [JSONPlaceholder - free online REST API](http://jsonplaceholder.typicode.com/)
+
+**Notes:**
+
+Export vs export default from Chanceler:
+- TS projects are structured with implementation code, types, and an index. Everything exported from the folder should be in the index.ts so you need to be cognizant if you do a export default in an implementation you will have to do it in the index. The reason it would not be preferred is that with a default you will probably still have import some types in a destructured manner.
