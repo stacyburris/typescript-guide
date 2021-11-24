@@ -1,5 +1,6 @@
+// User --> new / reference name/age/lat/lng
+
 import faker from 'faker';
-// npmjs.com "faker" package
 
 export class User {
   name: string
@@ -16,3 +17,4 @@ export class User {
       lng: parseFloat(faker.address.longitude())
     }
   }
+}

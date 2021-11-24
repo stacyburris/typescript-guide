@@ -1,10 +1,13 @@
 /// <reference types="@types/google.maps" />
-// to run in terminal parcel index.html
+import { CustomMap } from "./CustomMap";
 import { User } from "./user";
 import { Company } from "./Company";
 
 const user = new User();
-console.log(user);
-
 const company = new Company();
-console.log(company);
+const customMap = new CustomMap("map");
+
+customMap.addMarker(user);
+customMap.addMarker(company);
+// new CustomMap("map");
+

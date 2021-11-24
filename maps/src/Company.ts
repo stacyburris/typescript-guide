@@ -1,3 +1,4 @@
+// Company --> new / reference name/slogan/lat/lng
 import faker from 'faker';
 
 export class Company {
