@@ -1,4 +1,8 @@
 # Typescript: The Complete Developer's Guide
+
+![The TS Type System](images/ts-system.png)
+
+![TS run](images/ts-compiler.png)
 ## Syntax + Features
 
 **Typing inference?**
@@ -16,6 +20,7 @@
 **What is the syntax for defining an interface?**
 - 
 - One of TypeScript’s core principles is that type checking focuses on the shape that values have. This is sometimes called “duck typing” or “structural subtyping”. In TypeScript, interfaces fill the role of naming these types, and are a powerful way of defining contracts within your code as well as contracts with code outside of your project.
+
 **Interface:**
   1. You can use any type inside interface definition. Not limited just to primitive values.
   2. Inside Interface definition you can express function inside as well
@@ -48,6 +53,10 @@ The goal of an interface is to: Define a new type
     charAt(), charCodeAt(), concat(), includes(), endsWith(), indexOf(), lastIndexOf(), localeCompare(), match().
      ```
 ![Types](images/types.png)
+
+- Types are used by the Typescript Compiler to analyze the code for errors
+- Types allow other engineers to understand what values are flowing around the codebase
+
 ![Primitive & Object Types](images/primitive-object.png)
 
 **Function typing + annotations**

@@ -14,13 +14,10 @@ axios.get(url).then(response => {
   // response.data has propertied of: 
   // id, title, completed
   const todo = response.data as Todo;
-
   const id = todo.id;
   const title = todo.title;
   const completed = todo.completed;
-
   logTodo(id, title, completed);
-
 });
 
 const logTodo = (id: number, title: string, completed: boolean) => {
@@ -30,3 +27,13 @@ const logTodo = (id: number, title: string, completed: boolean) => {
     Is it completed? ${completed}
   `);
 }
+
+// Show why TS is handy
+// 1. Import axios to make network request to get data from jsonplaceholder
+// 2. Compile file to plan JS code by tsc name of file (index.ts)
+// 3. Run node index.js 
+// Gets old to compile and then run
+// Instead use ts-node <name of file> index.ts to compile and run
+
+// Create an interface called Todo
+// Use the interface to define the structure of an object
