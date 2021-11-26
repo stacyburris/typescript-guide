@@ -1,3 +1,5 @@
+// npm install parcel-bundler
+
 /// <reference types="@types/google.maps" />
 import { CustomMap } from "./CustomMap";
 import { User } from "./user";
